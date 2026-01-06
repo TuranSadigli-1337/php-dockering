@@ -57,18 +57,14 @@ docker-compose.yml
 
 Defines three services:
 
-db: MySQL with persistent volume for initial SQL scripts.
+``db: MySQL with persistent volume for initial SQL scripts.
 www: PHP Apache server mapping local files to /var/www/html.
 phpmyadmin: Admin interface for MySQL.
-index.php
+index.php``
 
 Connects to the database and displays all records from php_docker_table.
 
-test.php
-
-A simple PHP file for testing.
-
-Notes
+**NOTES:**
 
 The database is persisted via Docker volumes.
 The web server serves files from the current directory.
