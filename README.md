@@ -51,16 +51,15 @@ Columns: id, name, age, creation_date
 The SQL file automatically creates the table and inserts sample data when the db container starts.
 
 
-File Descriptions
-
-docker-compose.yml
+File Descriptions: ``docker-compose.yml``
 
 Defines three services:
 
-``db: MySQL with persistent volume for initial SQL scripts.
-www: PHP Apache server mapping local files to /var/www/html.
-phpmyadmin: Admin interface for MySQL.
-index.php``
+``db: MySQL with persistent volume for initial SQL scripts.``
+
+``www: PHP Apache server mapping local files to /var/www/html.``
+
+``phpmyadmin: Admin interface for MySQL.``
 
 Connects to the database and displays all records from php_docker_table.
 
