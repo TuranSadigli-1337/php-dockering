@@ -29,6 +29,7 @@ MySQL database (db)
 PHP + Apache web server (www)
 phpMyAdmin (phpmyadmin)
 3. Access the Application
+
 ```
 Web App: http://localhost
 Displays data from php_docker_table.
@@ -78,11 +79,17 @@ Troubleshooting
 If the web page shows no data:
 
 Check if the database container is running:
+
 ```docker ps```
+
 Verify the SQL was imported:
+
 ```docker exec -it <db-container-id> mysql -u php_docker -p php_docker```
+
 Then run:
+
 ```SELECT * FROM php_docker_table;```
+
 Reset Everything
 
 To completely reset the environment (removes containers, volumes, and networks):
