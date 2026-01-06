@@ -43,11 +43,14 @@ Password: password
 4. Stop the Application
 ``` docker-compose down ```
 
-**Database Details
-**
-Database name: php_docker
-Table: php_docker_table
-Columns: id, name, age, creation_date
+**Database Details**
+
+``Database name: php_docker``
+
+``Table: php_docker_table``
+
+``Columns: id, name, age, creation_date``
+
 The SQL file automatically creates the table and inserts sample data when the db container starts.
 
 
